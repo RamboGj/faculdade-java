@@ -10,7 +10,7 @@ public class Ex15 {
         float newValue = value * 100; 
         int intValue = (int)newValue; 
 
-        System.out.println("value :" + intValue); 
+        System.out.println("intValue :" + intValue); 
 
         int notas = (int)intValue / 100;
         int currency = (int)intValue - (notas * 100);
