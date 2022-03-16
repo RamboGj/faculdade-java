@@ -4,16 +4,19 @@ public class Ex15 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Digite um valor com no máximo duas casas decimais: ") ;
-        float value = input.nextFloat();
+        double value;
+        int notas, currency;
 
-        float newValue = value * 100; 
+        System.out.print("Digite um valor com no máximo duas casas decimais: ") ;
+        value = input.nextDouble();
+
+        double newValue = value * 100; 
         int intValue = (int)newValue; 
 
         System.out.println("intValue :" + intValue); 
 
-        int notas = (int)intValue / 100;
-        int currency = (int)intValue - (notas * 100);
+        notas = (int)intValue / 100;
+        currency = (int)intValue - (notas * 100);
         
         System.out.println("notas :" + notas); 
         System.out.println("currency :" + currency); 
@@ -22,19 +25,19 @@ public class Ex15 {
         int resto = notas % 100;
 
         int notas50 = resto / 50;
-        resto = resto % 50;
+        resto %= 50;
 
         int notas20 = resto / 20;
-        resto = resto % 20;
+        resto %= 20;
 
         int notas10 = resto / 10;
-        resto = resto % 10;
+        resto %= 10;
 
         int notas5 = resto / 5;
-        resto = resto % 5;
+        resto %= 5;
 
         int notas2 = resto / 2;
-        resto = resto % 2;
+        resto %= 2;
 
         int currency100 = resto;
 
@@ -42,32 +45,29 @@ public class Ex15 {
         int currencyRest = currency % 50;
 
         int currency25 = currencyRest / 25;
-        currencyRest = currencyRest % 25;
+        currencyRest %= 25;
 
         int currency10 = currencyRest / 10;
-        currencyRest = currencyRest % 10;
+        currencyRest %= 10;
 
         int currency5 = currencyRest / 5;
-        currencyRest = currencyRest % 5;
 
-        int currency1 = currencyRest;
+        int currency1 = currencyRest % 5;
 
         System.out.println(
             "Notas de 100: " + notas100 +
-            " Notas de 50: " + notas50 +
-            " Notas de 20: " + notas20 +
-            " Notas de 10: " + notas10 +
-            " Notas de 5: " + notas5 + 
-            " Notas de 2: " + notas2 +
-            " Moedas de 1 real: " + currency100 +
-            " Moedas de 50 centavos: " + currency50 +
-            " Moedas de 25 centavos: " + currency25 +
-            " Moedas de 10 centavos: " + currency10 +
-            " Moedas de 5 centavos: " + currency5 +
-            " Moedas de 1 centavo: " + currency1
+            "\nNotas de 50: " + notas50 +
+            "\nNotas de 20: " + notas20 +
+            "\nNotas de 10: " + notas10 +
+            "\nNotas de 5: " + notas5 + 
+            "\nNotas de 2: " + notas2 +
+            "\nMoedas de 1 real: " + currency100 +
+            "\nMoedas de 50 centavos: " + currency50 +
+            "\nMoedas de 25 centavos: " + currency25 +
+            "\nMoedas de 10 centavos: " + currency10 +
+            "\nMoedas de 5 centavos: " + currency5 +
+            "\nMoedas de 1 centavo: " + currency1
         );
-
-        System.out.println("sending to github..."); 
 
         input.close();
     }
