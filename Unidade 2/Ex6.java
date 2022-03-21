@@ -27,6 +27,8 @@ public class Ex6 {
             "Funcionário: " + number + "\n" +
             "Salário: " + salary
         );
+
+        input.close();
     } 
 }
 

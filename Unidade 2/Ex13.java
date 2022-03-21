@@ -23,5 +23,7 @@ public class Ex13 {
         minutes = distance * 2;
 
         System.out.println("O tempo para os carros terem a distância de " + distance + " Km entre eles é de " + minutes + " minutos");
+
+        input.close();
     }
 }

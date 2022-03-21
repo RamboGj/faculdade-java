@@ -25,5 +25,7 @@ public class Ex16 {
         totalLiters = (bottle350 * ml350) + (bottle600 * ml600) + (bottle2000 * liter2);
 
         System.out.println("O comerciante comprou " + totalLiters + " litros.");
+
+        input.close();
     }
 }

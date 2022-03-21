@@ -25,5 +25,7 @@ public class Ex10 {
         seconds = rest;
 
         System.out.println("O evento teve duração de " + dfTime.format(hours) + ":" + dfTime.format(minutes) + ":" + dfTime.format(seconds));
+
+        input.close();
     }
 }

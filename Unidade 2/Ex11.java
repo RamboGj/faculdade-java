@@ -43,5 +43,7 @@ public class Ex11 {
 
         areaE = df2.format(a * b); // l1.l2
         System.out.println("A área da letra E é " + areaE + "m2");
+
+        input.close();
     }
 }

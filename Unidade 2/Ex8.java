@@ -38,5 +38,7 @@ public class Ex8 {
 
         totalPrice = df2.format((quantityProduct1 * priceBy1) + (quantityProduct2 * priceBy2));
         System.out.println("O preço final é de R$" + totalPrice);
+
+        input.close();
     }
 }

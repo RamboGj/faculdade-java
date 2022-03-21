@@ -34,5 +34,7 @@ public class Ex12 {
         formattedDistance = df4.format(distance);
 
         System.out.println("A distânia entre os pontos é aproximadamente " + formattedDistance);
+
+        input.close();
     }
 }

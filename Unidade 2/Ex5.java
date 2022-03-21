@@ -23,5 +23,7 @@ public class Ex5 {
         int result = (valueA * valueB) - (valueC * valueD);
 
         System.out.println("O resultado é " + result);
+
+        input.close();
     } 
 }

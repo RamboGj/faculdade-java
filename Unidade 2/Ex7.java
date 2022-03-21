@@ -26,5 +26,7 @@ public class Ex7 {
         String finalSalary = df2.format(sales * (15/100) + standardSalary);
 
         System.out.println("O salário do vendedor é R$" + finalSalary);
+
+        input.close();
     }
 }
