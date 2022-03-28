@@ -18,6 +18,7 @@ public class Ex15 {
         notas = (int)intValue / 100;
         currency = (int)intValue - (notas * 100);
         
+        
         System.out.println("notas :" + notas); 
         System.out.println("currency :" + currency); 
 
@@ -55,20 +56,19 @@ public class Ex15 {
         int currency1 = currencyRest % 5;
 
         System.out.println(
-            "Notas de 100: " + notas100 +
-            "\nNotas de 50: " + notas50 +
-            "\nNotas de 20: " + notas20 +
-            "\nNotas de 10: " + notas10 +
-            "\nNotas de 5: " + notas5 + 
-            "\nNotas de 2: " + notas2 +
-            "\nMoedas de 1 real: " + currency100 +
-            "\nMoedas de 50 centavos: " + currency50 +
-            "\nMoedas de 25 centavos: " + currency25 +
-            "\nMoedas de 10 centavos: " + currency10 +
-            "\nMoedas de 5 centavos: " + currency5 +
-            "\nMoedas de 1 centavo: " + currency1
-        );
-
-        input.close();
+            "NOTAS:" +
+            "\n" + notas100 + " nota(s) de R$ 100.00" +
+            "\n" + notas50 + " nota(s) de R$ 50.00" +
+            "\n" + notas20 + " nota(s) de R$ 25.00" +
+            "\n" + notas10 + " nota(s) de R$ 10.00" +
+            "\n" + notas5 + " nota(s) de R$ 5.00" +
+            "\n" + notas2 + " nota(s) de R$ 2.00" +
+            "\nMOEDAS:" +
+            "\n" + currency100 + " moeda(s) de R$ 1.00" +
+            "\n" + currency50 + " moeda(s) de R$ 0.50" +
+            "\n" + currency25 + " moeda(s) de R$ 0.25" +
+            "\n" + currency10 + " moeda(s) de R$ 0.10" +
+            "\n" + currency5 + " moeda(s) de R$ 0.05" +
+            "\n" + currency1 + " moeda(s) de R$ 0.01");
     }
 }

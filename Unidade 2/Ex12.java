@@ -11,23 +11,23 @@ public class Ex12 {
         Distancia = https://prnt.sc/jvxvhv
         */
 
-        int x1, x2, y1, y2;
+        float x1, x2, y1, y2;
         String formattedDistance;
 
         Scanner input = new Scanner(System.in);
         DecimalFormat df4 = new DecimalFormat("0.0000");
 
         System.out.println("Informe o ponto x1");
-        x1 = input.nextInt();
+        x1 = input.nextFloat();
 
         System.out.println("Informe o ponto y1");
-        y1 = input.nextInt();
+        y1 = input.nextFloat();
 
         System.out.println("Informe o ponto x2");
-        x2 = input.nextInt();
+        x2 = input.nextFloat();
 
         System.out.println("Informe o ponto y2");
-        y2 = input.nextInt();
+        y2 = input.nextFloat();
 
         Double distance = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
 
