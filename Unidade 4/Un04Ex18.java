@@ -41,5 +41,7 @@ public class Un04Ex18 {
             value2 = value + (value * 0.02f * (paymentDateInt - validityDataInt - 5));
             System.out.println("O valor com a multa será de R$" + value2);
         }
+
+        input.close();
     }
 }

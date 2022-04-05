@@ -32,5 +32,7 @@ public class Un04Ex17 {
             ir = liquid * 0.1f;
             System.out.println("Alíquota de R$" + ir); 
         }
+
+        input.close();
     }
 }

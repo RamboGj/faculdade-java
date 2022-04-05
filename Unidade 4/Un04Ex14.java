@@ -63,22 +63,6 @@ public class Un04Ex14 {
             }
         }
 
-        
-
-        /*
-1 	Janeiro 	tem 31 dias
-2 	Fevereiro 	tem 28 dias (29 dias nos anos bissextos)
-3 	Março 	tem 31 dias
-4 	Abril 	tem 30 dias
-5 	Maio 	tem 31 dias
-6 	Junho 	tem 30 dias
-7 	Julho 	tem 31 dias
-8 	Agosto 	tem 31 dias
-9 	Setembro 	tem 30 dias
-10 	Outubro 	tem 31 dias
-11 	Novembro 	tem 30 dias
-12 	Dezembro 	tem 31 dias
-        */
-        
+        input.close();
     }
 }

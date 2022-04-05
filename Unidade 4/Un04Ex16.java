@@ -46,5 +46,7 @@ public class Un04Ex16 {
 
         System.out.println("result1: " + result1); 
         System.out.println("result2: " + result2); 
+
+        input.close();
     }
 }

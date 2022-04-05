@@ -19,5 +19,7 @@ public class Un04Ex15 {
         } else if (months > 12 && months <= 48) {
             System.out.println("Reajuste de 7%");
         }
+
+        input.close();
     }
 }
