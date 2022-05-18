@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex01 {
+public class Uni5Ex01 {
     public static void main(String[] args) {
         /*
         Descreva um algoritmo que leia 20 números inteiros e escreva, para cada número lido, 
