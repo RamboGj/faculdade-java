@@ -11,7 +11,6 @@ public class Uni5Ex10 {
         int age, numberOf20Upper = 0;
 
         int n = input.nextInt();
-        
 
         for (int i = 0; i < n; i++) {
             age = input.nextInt();
