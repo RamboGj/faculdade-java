@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
 
 public class Un06Ex05 {
     public static void main(String[] args) {
@@ -50,7 +49,7 @@ public class Un06Ex05 {
                 index += 1;
             }
 
-            if ((firstPerson[i] != firstPerson[i]) && (firstPerson[i].toString() !=  "IND" || secondPerson[i].toString() != "IND")) {
+            if ((firstPerson[i] != secondPerson[i]) && (firstPerson[i].toString() !=  "IND" || secondPerson[i].toString() != "IND")) {
                 index -= 2;
             }
         }
