@@ -20,7 +20,7 @@ public class Un06Ex03 {
         input.close();
     }
 
-    private static double[] refactorValues(double array[]) {
+    private static double[] refactorValues(double[] array) {
         for (int i = 0; i < array.length; i ++) {
             if (array[i] % 2 != 0) {
                 array[i] = array[i] * 0.05;
@@ -36,13 +36,14 @@ public class Un06Ex03 {
         System.out.println(Arrays.toString(array));
     }
 
-    private static double[] readValues(double array[], double number) {
+    private static double[] readValues(double[] array, double number) {
         Scanner input = new Scanner(System.in);
 
         for (int i = 0; i < array.length; i ++) {
             number = input.nextInt();
             array[i] = number; 
         }
+        input.close();
 
         return array;
     } 
